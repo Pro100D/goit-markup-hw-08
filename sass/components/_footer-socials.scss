@@ -1,0 +1,53 @@
+.socials {
+	@media screen and (min-width: $desctop) {
+        margin-left: 70px;
+    }
+
+	&__title {
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+
+		color: $whiteColor;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+}
+
+.socials-list {
+	@extend %list;
+
+	display: flex;
+    @media screen and (max-width: $tablet){
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 44px;
+		height: 44px;
+
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.1);
+
+		transition: background-color 250ms $timingFunction;
+	}
+
+	&__link:hover {
+		background-color: $accentColor;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		fill: $whiteColor;
+	}
+}

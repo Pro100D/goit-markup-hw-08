@@ -1,0 +1,37 @@
+.logo {
+	color: black;
+
+	font-family: raleway, cursive;
+
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
+	@media screen and (min-width: $tablet) {
+		margin-right: 87px;
+	}
+
+	@media screen and (min-width: $desctop) {
+		margin-right: 92px;
+	}
+
+	&__icon {
+		color: $accentColor;
+	}
+	&--white {
+		color: $whiteColor;
+		@media screen and (min-width: $tablet) {
+			margin-right: 0;
+		}
+
+		@media screen and (min-width: $desctop) {
+			margin-right: 0;
+		}
+		@media screen and (max-width: 1199px) {
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.header {
+	&--line {
+		border-bottom: 1px solid #ececec;
+	}
+}
+
+.header__nav {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: center;
+	}
+}
+.main__nav {
+	display: flex;
+}

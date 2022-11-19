@@ -1,0 +1,31 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
+
+	&--fon {
+		background-color: #2f303a;
+	}
+
+	&__content {
+		@media screen and (min-width: $desctop) {
+			display: flex;
+			align-items: baseline;
+		}
+	}
+
+	&__tablet {
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-evenly;
+		}
+		
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 60px;
+		}
+	}
+}

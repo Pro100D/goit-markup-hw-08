@@ -1,0 +1,62 @@
+body {
+	font-family: roboto, sans-serif;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+}
+
+%list {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+%visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.section-title {
+	color: $titleTextColor;
+
+	@media screen and (min-width: $mobil) {
+		font-size: 28px;
+		line-height: 1.17;
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: $desctop) {
+		font-size: 36px;
+		line-height: 1.16;
+		margin-bottom: 50px;
+	}
+
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-top: 0;
+}

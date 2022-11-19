@@ -1,0 +1,62 @@
+.hero {
+	@media screen and (max-width: $desctop) {
+		height: 400px;
+	}
+
+	@media screen and (min-width: $desctop) {
+		height: 600px;
+	}
+	max-width: 1600px;
+
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/Hero-mobil\ img.jpg);
+	background-size: cover;
+	background-color: #2f303a;
+	background-position: center;
+	@media (min-resolution: 2dppx) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../../imeges/Hero-mobil\ img@2x.jpg);
+	}
+
+	@media screen and (min-width: $tablet) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/Hero-tablet.jpg);
+
+		@media (min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../../imeges/Hero-tablet@2x.jpg);
+		}
+	}
+
+	@media screen and (min-width: $desctop) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/hero-desctop.jpg);
+		@media (min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../../imeges/hero-desctop@2x.jpg);
+		}
+	}
+	text-align: center;
+	padding-top: 180px;
+	padding-bottom: 220px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&__title {
+		@media screen and (max-width: $desctop) {
+			font-size: 26px;
+			line-height: 1.61;
+		}
+
+		@media screen and (min-width: $desctop) {
+			font-size: 44px;
+			line-height: 1.36;
+		}
+		color: $whiteColor;
+
+		margin-top: 0;
+		margin-bottom: 30px;
+		font-style: normal;
+		font-weight: 900;
+
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+}

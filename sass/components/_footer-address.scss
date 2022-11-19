@@ -1,0 +1,47 @@
+.address {
+	font-style: normal;
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+	// @media screen and (min-width: $tablet) {
+	// 	margin-bottom: 0;
+	// }
+	// @media screen and (min-width: $desctop) {
+	// 	margin-bottom: 0;
+	// }
+	&__text {
+		color: $whiteColor;
+
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		margin-top: 20px;
+		margin-bottom: 9px;
+		@media screen and (min-width: $desctop) {
+			padding-right: 20px;
+		}
+	}
+}
+.address-list {
+	@extend %list;
+
+	&__item:not(:last-child) {
+		margin-bottom: 8px;
+	}
+
+	&__link {
+		color: rgba(255, 255, 255, 0.6);
+
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		transition: color 250ms $timingFunction;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		color: $accentColor;
+	}
+}

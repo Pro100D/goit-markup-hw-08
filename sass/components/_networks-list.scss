@@ -1,0 +1,44 @@
+.networks-list {
+	@extend %list;
+
+	display: flex;
+	justify-content: center;
+
+	padding-bottom: 30px;
+
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 44px;
+		height: 44px;
+
+		border-radius: 50%;
+
+		transition: background-color 250ms $timingFunction;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		background-color: $accentColor;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+
+		fill: #afb1b8;
+
+		transition: fill 250ms $timingFunction;
+	}
+
+	&__link:hover > &__icon,
+	&__link:focus > &__icon {
+		fill: $whiteColor;
+	}
+}

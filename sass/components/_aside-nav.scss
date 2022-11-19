@@ -1,0 +1,73 @@
+.aside {
+	margin-left: auto;
+}
+
+.aside-nav {
+	@extend %list;
+
+	@media screen and (min-width: $tablet) {
+		&__item:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	@media screen and (min-width: $desctop) {
+		display: flex;
+
+		&__item:not(:last-child) {
+			margin-right: 50px;
+			margin-bottom: 0;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+
+		color: $primaryTextColor;
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		@media screen and (max-width: 1199px) {
+			font-size: 12px;
+			line-height: 1.16;
+		}
+		letter-spacing: 0.02em;
+		text-decoration: none;
+
+		transition: color 250ms $timingFunction;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		color: $accentColor;
+	}
+
+	&__link:hover > &__icon,
+	&__link:focus > &__icon {
+		fill: $accentColor;
+	}
+
+	&__icon {
+	
+		fill: $primaryTextColor;
+
+		margin-right: 8px;
+		@media screen and (min-width: $desctop){
+			margin-right: 10px;
+		}
+
+		transition: fill 250ms $timingFunction;
+	}
+	&__icon.tel{
+	@media screen and (max-width: $desctop){
+			width: 14px;
+			height: 10px;
+		}
+	}
+	&__icon.mail{
+	@media screen and (max-width: $desctop){
+			width: 10px;
+			height: 14px;
+		}
+	}
+}
