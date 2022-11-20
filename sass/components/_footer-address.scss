@@ -3,12 +3,10 @@
 	@media screen and (max-width: 767px) {
 		margin-bottom: 60px;
 	}
-	// @media screen and (min-width: $tablet) {
-	// 	margin-bottom: 0;
-	// }
-	// @media screen and (min-width: $desctop) {
-	// 	margin-bottom: 0;
-	// }
+	@media screen and (min-width: $tablet) and (max-width: 1199px){
+		margin-right: 165px;
+	}
+
 	&__text {
 		color: $whiteColor;
 

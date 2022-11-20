@@ -22,7 +22,7 @@
 		justify-content: center;
 		align-items: center;
 
-		@media screen and (min-width: $mobil) {
+		@media screen and (max-width: 767px) {
 			width: 210px;
 		}
 			@media screen and (min-width: $tablet) {

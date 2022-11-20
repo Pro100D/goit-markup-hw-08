@@ -8,29 +8,29 @@
 	}
 	max-width: 1600px;
 
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/Hero-mobil\ img.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-mobil.jpg);
 	background-size: cover;
 	background-color: #2f303a;
 	background-position: center;
 	@media (min-resolution: 2dppx) {
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url(../../imeges/Hero-mobil\ img@2x.jpg);
+			url(../imeges/hero-mobil@2x.jpg);
 	}
 
 	@media screen and (min-width: $tablet) {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/Hero-tablet.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-tablet.jpg);
 
 		@media (min-resolution: 2dppx) {
 			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-				url(../../imeges/Hero-tablet@2x.jpg);
+				url(../imeges/hero-tablet@2x.jpg);
 		}
 	}
 
 	@media screen and (min-width: $desctop) {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/hero-desctop.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-desctop.jpg);
 		@media (min-resolution: 2dppx) {
 			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-				url(../../imeges/hero-desctop@2x.jpg);
+				url(../imeges/hero-desctop@2x.jpg);
 		}
 	}
 	text-align: center;
