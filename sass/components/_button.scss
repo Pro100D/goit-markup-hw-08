@@ -55,17 +55,30 @@
 	background-color: transparent;
 	display: inline-flex;
 
-	&  .icon-cross {
+	@media screen and (min-width: $tablet) {
 		display: none;
 	}
 
-	&.is-open .icon-cross{
-		display: block
+	& .icon-cross {
+		display: none;
 	}
-	&.is-open .icon-menu{
-		display: none
+
+	&.is-open .icon-cross {
+		display: block;
+	}
+
+	&.is-open .icon-menu {
+		display: none;
 	}
 }
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross,
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu {
+	fill: $accentColor;
+	transition: fill 250ms $timingFunction;
+}
+
 .button-list {
 	@extend %list;
 
@@ -94,7 +107,7 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	@media screen and (min-width: $desctop){
+	@media screen and (min-width: $desctop) {
 		margin-left: 12px;
 	}
 }

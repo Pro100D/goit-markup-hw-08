@@ -24,14 +24,39 @@
 						<span class="logo__icon">Web</span>
 						Studio
 					</a>
-
-					<button type="button" class="menu-button is-open" aria-label="переключатель мобильного меню">
+					<button
+						type="button"
+						class="menu-button"
+						aria-expanded="false"
+						aria-label="переключатель мобильного меню"
+						data-menu-button
+					>
 						<svg width="40px" height="40px">
 							<use class="icon-cross" href="./imeges/symbol-defs.svg#icon-close"></use>
 							<use class="icon-menu" href="./imeges/symbol-defs.svg#icon-menu"></use>
 						</svg>
 					</button>
-
+					<div class="menu-mobil is-hidden" data-menu>
+						<ul class="menu-mobil__nav">
+							<li class="menu-mobil__item"><a class="menu-mobil__link current" href="./index.html">Студія</a></li>
+							<li class="menu-mobil__item"><a class="menu-mobil__link" href="./portfolio.html">Портфоліо</a></li>
+							<li class="menu-mobil__item"><a class="menu-mobil__link" href="">Контакти</a></li>
+						</ul>
+						<ul class="menu-mobil__aside">
+							<li class="mobil-aside__item">
+								<a class="mobil-aside__link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+							<li class="mobil-aside__item">
+								<a class="mobil-aside__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="menu-mobil__socials">
+							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link--line">Instagram</a></li>
+							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link--line">Twitter</a></li>
+							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link--line">Facebook</a></li>
+							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link">LinkedIn</a></li>
+						</ul>
+					</div>
 					<ul class="site-nav">
 						<li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студія</a></li>
 						<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
@@ -275,10 +300,7 @@
 						</li>
 						<li class="team-list__item">
 							<picture>
-								<source
-									srcset="./imeges/myxa-mobil.jpg 1x, ./imeges/myxa-mobil@2x.jpg 2x"
-									media="(max-width: 767px)"
-								/>
+								<source srcset="./imeges/myxa-mobil.jpg 1x, ./imeges/myxa-mobil@2x.jpg 2x" media="(max-width: 767px)" />
 								<source
 									srcset="./imeges/myxa-tablet.jpg 1x, ./imeges/myxa-tablet@2x.jpg 2x"
 									media="(max-width: 1199px)"
