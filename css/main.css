@@ -1072,8 +1072,33 @@ img {
 
 .button-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .button-list {
+    row-gap: 15px;
+    width: 329px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-list {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
 }
 .button-list__item:not(:last-child) {
   margin-right: 8px;

@@ -81,10 +81,29 @@
 
 .button-list {
 	@extend %list;
+	@media screen and (max-width: 767px) {
+		row-gap: 15px;
+		width: 329px;
+	}
 
 	display: flex;
-	margin-bottom: 50px;
-	justify-content: center;
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: $tablet) {
+		justify-content: center;
+			margin-bottom: 30px;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 40px;
+	}
+
+
+	@media screen and (min-width: $desctop) {
+		margin-bottom: 50px;
+	}
 
 	&__item:not(:last-child) {
 		margin-right: 8px;
