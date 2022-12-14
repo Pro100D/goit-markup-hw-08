@@ -350,11 +350,6 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 767px) {
-  .feature-list__item {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px) {
   .feature-list__item {
     width: 354px;
