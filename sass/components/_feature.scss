@@ -41,10 +41,20 @@
 			margin-bottom: 30px;
 		}
 	}
-
+	@media screen and (max-width: 767px) {
+		&__item {
+			width: 450px;
+		}
+	}
 	@media screen and (min-width: $tablet) {
 		&__item {
 			width: 354px;
+		}
+	}
+
+	@media screen and (min-width: $desctop) {
+		&__item {
+			width: 270px;
 		}
 	}
 	&__title {

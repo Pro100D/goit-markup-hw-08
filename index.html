@@ -13,6 +13,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
@@ -20,7 +21,7 @@
 		<header class="header header--line">
 			<div class="header__nav container">
 				<nav class="main__nav">
-					<a href="./index.html" class="logo">
+					<a href="./index.html" class="logo" data-aos="zoom-in-right">
 						<span class="logo__icon">Web</span>
 						Studio
 					</a>
@@ -51,20 +52,26 @@
 							</li>
 						</ul>
 						<ul class="menu-mobil__socials">
-							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link--line">Instagram</a></li>
-							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link--line">Twitter</a></li>
-							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link--line">Facebook</a></li>
+							<li class="menu-socials__item">
+								<a href="" class="menu-socials__link menu-socials__link--line">Instagram</a>
+							</li>
+							<li class="menu-socials__item">
+								<a href="" class="menu-socials__link menu-socials__link--line">Twitter</a>
+							</li>
+							<li class="menu-socials__item">
+								<a href="" class="menu-socials__link menu-socials__link--line">Facebook</a>
+							</li>
 							<li class="menu-socials__item"><a href="" class="menu-socials__link menu-socials__link">LinkedIn</a></li>
 						</ul>
 					</div>
-					<ul class="site-nav">
+					<ul class="site-nav" data-aos="zoom-in-down">
 						<li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студія</a></li>
 						<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
 						<li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
 					</ul>
 				</nav>
 				<div class="aside">
-					<ul class="aside-nav">
+					<ul class="aside-nav" data-aos="zoom-out-left">
 						<li class="aside-nav__item">
 							<a href="mailto:info@devstudio.com" class="aside-nav__link">
 								<svg class="aside-nav__icon tel" width="16px" height="12px">
@@ -89,12 +96,20 @@
 			<!-- Главная тема компании  -->
 			<section class="hero">
 				<div class="container">
-					<h1 class="hero__title">
+					<h1 class="hero__title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						Ефективні рішення для
 						<br />
 						вашого бізнесу
 					</h1>
-					<button type="button" class="button-primary" data-modal-open>Замовити послугу</button>
+					<button
+						type="button"
+						class="button-primary"
+						data-modal-open
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						Замовити послугу
+					</button>
 				</div>
 			</section>
 			<!-- Плюсы компании -->
@@ -102,7 +117,12 @@
 				<div class="container">
 					<h2 class="feature-title">Особливості компанії</h2>
 					<ul class="feature-list">
-						<li class="feature-list__item">
+						<li
+							class="feature-list__item"
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1500"
+						>
 							<div class="feature-list feature-list__icon--fon">
 								<svg class="feature-list__icon">
 									<use href="./imeges/symbol-defs.svg#icon-antenna-1"></use>
@@ -113,7 +133,12 @@
 								Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
 							</p>
 						</li>
-						<li class="feature-list__item">
+						<li
+							class="feature-list__item"
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1500"
+						>
 							<div class="feature-list feature-list__icon--fon">
 								<svg class="feature-list__icon">
 									<use href="./imeges/symbol-defs.svg#icon-clock-1"></use>
@@ -124,7 +149,12 @@
 								Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
 							</p>
 						</li>
-						<li class="feature-list__item">
+						<li
+							class="feature-list__item"
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1500"
+						>
 							<div class="feature-list feature-list__icon--fon">
 								<svg class="feature-list__icon">
 									<use href="./imeges/symbol-defs.svg#icon-diagram-1"></use>
@@ -133,7 +163,12 @@
 							<h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
 							<p class="feature-list__text">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
-						<li class="feature-list__item">
+						<li
+							class="feature-list__item"
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1500"
+						>
 							<div class="feature-list feature-list__icon--fon">
 								<svg class="feature-list__icon">
 									<use href="./imeges/symbol-defs.svg#icon-astronaut-1"></use>
@@ -150,21 +185,21 @@
 			<!-- Область работы компании -->
 			<section class="work">
 				<div class="container">
-					<h2 class="section-title">Чим ми займаємося</h2>
+					<h2 class="section-title" data-aos="zoom-out-down">Чим ми займаємося</h2>
 					<ul class="work-list">
-						<li class="work-list__item">
+						<li class="work-list__item" data-aos="zoom-in-left">
 							<img src="./imeges/Foto1.png" alt="Робота с компьютером" width="370" />
 							<div class="work-list work-list--fon">
 								<h3 class="work-list__title">Десктопні додатки</h3>
 							</div>
 						</li>
-						<li class="work-list__item">
+						<li class="work-list__item" data-aos="fade-up">
 							<img src="./imeges/Foto2.png" alt="Робота с телефоном" width="370" />
 							<div class="work-list work-list--fon">
 								<h3 class="work-list__title">Мобільні додатки</h3>
 							</div>
 						</li>
-						<li class="work-list__item">
+						<li class="work-list__item" data-aos="zoom-in-right">
 							<img src="./imeges/Foto3.png" alt="Цветовая гамма" width="370" />
 							<div class="work-list work-list--fon">
 								<h3 class="work-list__title">Дизайнерські рішення</h3>
@@ -176,8 +211,8 @@
 			<!-- Комманда компании -->
 			<section class="team team--fon">
 				<div class="container">
-					<h2 class="section-title">Наша команда</h2>
-					<ul class="team-list">
+					<h2 class="section-title" data-aos="zoom-out-down">Наша команда</h2>
+					<ul class="team-list" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 						<li class="team-list__item">
 							<picture>
 								<source
@@ -198,22 +233,22 @@
 							<p class="team-list__text">Product Designer</p>
 							<ul class="networks-list list">
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-instagram-2"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-twitter-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-facebook-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-linkedin-1"></use></svg>
 									</a>
 								</li>
@@ -221,7 +256,10 @@
 						</li>
 						<li class="team-list__item">
 							<picture>
-								<source srcset="./imeges/mobil/olga-mobil.jpg 1x, ./imeges/mobil/olga-mobil@2x.jpg 2x" media="(max-width: 767px)" />
+								<source
+									srcset="./imeges/mobil/olga-mobil.jpg 1x, ./imeges/mobil/olga-mobil@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/>
 								<source
 									srcset="./imeges/tablet/olga-tablet.jpg 1x, ./imeges/tablet/olga-tablet@2x.jpg 2x"
 									media="(max-width: 1199px)"
@@ -236,22 +274,22 @@
 							<p class="team-list__text">Frontend Developer</p>
 							<ul class="networks-list list">
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-instagram-2"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-twitter-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-facebook-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-linkedin-1"></use></svg>
 									</a>
 								</li>
@@ -277,22 +315,22 @@
 							<p class="team-list__text">Marketing</p>
 							<ul class="networks-list list">
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-instagram-2"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-twitter-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-facebook-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-linkedin-1"></use></svg>
 									</a>
 								</li>
@@ -300,7 +338,10 @@
 						</li>
 						<li class="team-list__item">
 							<picture>
-								<source srcset="./imeges/mobil/myxa-mobil.jpg 1x, ./imeges/mobil/myxa-mobil@2x.jpg 2x" media="(max-width: 767px)" />
+								<source
+									srcset="./imeges/mobil/myxa-mobil.jpg 1x, ./imeges/mobil/myxa-mobil@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/>
 								<source
 									srcset="./imeges/tablet/myxa-tablet.jpg 1x, ./imeges/tablet/myxa-tablet@2x.jpg 2x"
 									media="(max-width: 1199px)"
@@ -315,22 +356,22 @@
 							<p class="team-list__text">UI Designer</p>
 							<ul class="networks-list list">
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-instagram-2"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-twitter-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-facebook-1"></use></svg>
 									</a>
 								</li>
 								<li class="networks-list__item">
-									<a class="networks-list__link" href="">
+									<a class="networks-list__link" href="" data-aos="fade-up" data-aos-duration="2000">
 										<svg class="networks-list__icon"><use href="./imeges/symbol-defs.svg#icon-linkedin-1"></use></svg>
 									</a>
 								</li>
@@ -344,32 +385,32 @@
 				<div class="container">
 					<h2 class="section-title">Постійні клієнти</h2>
 					<ul class="company-list">
-						<li class="company-list__item">
+						<li class="company-list__item" data-aos="zoom-out-up">
 							<a href="" class="company-list__link">
 								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-group"></use></svg>
 							</a>
 						</li>
-						<li class="company-list__item">
+						<li class="company-list__item" data-aos="zoom-out-down">
 							<a href="" class="company-list__link">
 								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-company"></use></svg>
 							</a>
 						</li>
-						<li class="company-list__item">
+						<li class="company-list__item" data-aos="zoom-out-up">
 							<a href="" class="company-list__link">
 								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-Object"></use></svg>
 							</a>
 						</li>
-						<li class="company-list__item">
+						<li class="company-list__item" data-aos="zoom-out-down">
 							<a href="" class="company-list__link">
 								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-forest"></use></svg>
 							</a>
 						</li>
-						<li class="company-list__item">
+						<li class="company-list__item" data-aos="zoom-out-up">
 							<a href="" class="company-list__link">
 								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-brand"></use></svg>
 							</a>
 						</li>
-						<li class="company-list__item">
+						<li class="company-list__item" data-aos="zoom-out-down">
 							<a href="" class="company-list__link">
 								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-tag-line"></use></svg>
 							</a>
@@ -384,21 +425,48 @@
 				<div class="footer__content">
 					<div class="footer__tablet">
 						<address class="address">
-							<a href="/" class="logo logo--white">
+							<a
+								href="/"
+								class="logo logo--white"
+								data-aos="fade-right"
+								data-aos-anchor="#example-anchor"
+								data-aos-offset="500"
+								data-aos-duration="500"
+							>
 								<span class="logo__icon">Web</span>
 								Studio
 							</a>
-							<p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+							<p
+								class="address__text"
+								data-aos="fade-right"
+								data-aos-anchor="#example-anchor"
+								data-aos-offset="500"
+								data-aos-duration="700"
+							>
+								м. Київ, пр-т Лесі Українки, 26
+							</p>
 							<ul class="address-list">
-								<li class="address-list__item">
+								<li
+									class="address-list__item"
+									data-aos="fade-right"
+									data-aos-anchor="#example-anchor"
+									data-aos-offset="500"
+									data-aos-duration="900"
+								>
 									<a href="mailto:info@devstudio.com" class="address-list__link">info@devstudio.com</a>
 								</li>
-								<li class="address-list__item">
+								<li
+									class="address-list__item"
+									data-aos="fade-right"
+									data-aos-anchor="#example-anchor"
+									data-aos-offset="500"
+									data-aos-duration="1100"
+								>
 									<a href="tel:+380961111111" class="address-list__link">(096) 111-11-11</a>
 								</li>
 							</ul>
 						</address>
-						<div class="socials">
+						<div class="socials" data-aos="zoom-out-down">
 							<h3 class="socials__title">приєднуйтесь</h3>
 							<ul class="socials-list">
 								<li class="socials-list__item">
@@ -424,7 +492,7 @@
 							</ul>
 						</div>
 					</div>
-					<form class="form-footer">
+					<form class="form-footer" data-aos="zoom-in-left">
 						<label>
 							<b class="form-footer__label">Підпишіться на розсилку</b>
 							<input type="email" placeholder="E-mail" class="form-footer__input" name="mail" />
@@ -492,5 +560,9 @@
 		</div>
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
