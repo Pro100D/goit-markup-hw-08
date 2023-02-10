@@ -24,6 +24,7 @@
 	}
 
 	&.is-open {
+		z-index: 10;
 		opacity: 1;
 		display: block;
 	}
@@ -95,15 +96,7 @@
 
 	color: $accentColor;
 }
-// .menu-socials__link::after {
-// 	content: " ";
 
-// 	margin-left: 10px;
-
-// 	border: 1px solid rgba(33, 33, 33, 0.2);
-// 	transform: rotate(90deg);
-
-// }
 .menu-socials__link--line {
 	border-right: 1px solid rgba(33, 33, 33, 0.2);
 	padding-right: 10px;
